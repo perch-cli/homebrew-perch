@@ -3,30 +3,30 @@
 class Perch < Formula
   desc "Run Claude Code as whichever Claude account you want, without logging in again"
   homepage "https://github.com/perch-cli/perch"
-  version "0.1.0"
+  version "0.1.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/perch-cli/perch/releases/download/v0.1.0/perch-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "c2947ffd1f4be4c079f3bdc41abbe71fd9a4fa2102f060e39a5535c3c21d30cd"
+      url "https://github.com/perch-cli/perch/releases/download/v0.1.1/perch-v0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "0f71c900f389fadea938988c0a4eee9b29aed76c8f961459553058a9d5b2034f"
     end
 
     on_intel do
-      url "https://github.com/perch-cli/perch/releases/download/v0.1.0/perch-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "c205050d4dc9769e8707bd1a8052c53bef3b7ec1600964e4c8303b2bc4996b06"
+      url "https://github.com/perch-cli/perch/releases/download/v0.1.1/perch-v0.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "9107c0332d67e78d23c90d9ab229dc96beb1f795ab2766be42d5c5f531ae725e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/perch-cli/perch/releases/download/v0.1.0/perch-v0.1.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "c899066ee5494769caaa1a29d9f29b31d6b3f659c49fad54956c8bc02b157992"
+      url "https://github.com/perch-cli/perch/releases/download/v0.1.1/perch-v0.1.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "8edaa0270a5a536c82b10057a24c900a2d21a771b9fa3b22ce51c9decca15a32"
     end
 
     on_intel do
-      url "https://github.com/perch-cli/perch/releases/download/v0.1.0/perch-v0.1.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "42c4b6d895b5655e4139977b041734d0a25089ebad1d0377e2794e1f35034ec7"
+      url "https://github.com/perch-cli/perch/releases/download/v0.1.1/perch-v0.1.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "49f888b42fad949baacf3f0312ea319e9811b97c0d2a42d09468723f811f3ab0"
     end
   end
 
