@@ -3,30 +3,30 @@
 class Perch < Formula
   desc "Run Claude Code as whichever Claude account you want, without logging in again"
   homepage "https://github.com/perch-cli/perch"
-  version "0.2.0"
+  version "0.3.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/perch-cli/perch/releases/download/v0.2.0/perch-v0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "dfd1c5033303975fd03d0c42875e916bf46b53a120c4244495e3d60733dd9b0b"
+      url "https://github.com/perch-cli/perch/releases/download/v0.3.0/perch-v0.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "02f87286581ab8d19412a5a1460b0e8193a3b53aec958cd5feeba33adbcada15"
     end
 
     on_intel do
-      url "https://github.com/perch-cli/perch/releases/download/v0.2.0/perch-v0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "dc47bcdaa7ae2455d5ee926af55ae0349c475f2c999cc76eec52885362ea3988"
+      url "https://github.com/perch-cli/perch/releases/download/v0.3.0/perch-v0.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "585d0decb09aef8295668c01f001b641422e54007e0e65d73bfc99536313a0a4"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/perch-cli/perch/releases/download/v0.2.0/perch-v0.2.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "c172cadf4356c3b5a649db3918372c678dbaca2cd3b05b86f3335047e9b072ab"
+      url "https://github.com/perch-cli/perch/releases/download/v0.3.0/perch-v0.3.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "e669d53d201d4eeec1b69e0ee0c99095565126b9872877ca41cecc1fc46dda7d"
     end
 
     on_intel do
-      url "https://github.com/perch-cli/perch/releases/download/v0.2.0/perch-v0.2.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "33766b3adfdf4145cff2859b52d2747b2b4dd57044ef2772090d1c67fc4372e4"
+      url "https://github.com/perch-cli/perch/releases/download/v0.3.0/perch-v0.3.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "4cefe6f3766e26b7fef577c4502d7510f7830c4bc0af895a9d79e201f19818c6"
     end
   end
 
@@ -35,6 +35,6 @@ class Perch < Formula
   end
 
   test do
-    assert_match "perch #{version}", shell_output("#{bin}/perch --version")
+    assert_match "perch #{version}", shell_output("#{bin}/perch version")
   end
 end
